@@ -1,0 +1,43 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background:rgba(29, 93, 99, 0.772);
+    color: #ff8c00f7;
+    padding: 10fx;
+}
+nav ul li{
+    display: inline;
+    margin-right: 100px;
+
+}
+nav ul li a {
+    color:darkblue;
+    text-decoration: none;
+
+}
+.main-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+
+}
+.product-description{
+    float: left;
+}
+.product-description h2{
+    color:black;
+}
+.product-image img{
+    max-width: 100%;
+
+}
+footer{
+    background-color: aqua;
+    color:blue;
+    text-align: center;
+    padding: 20px;
+}
