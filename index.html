@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portflio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <h1 class="logo">Yogavardhan Reddy</h1>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+        </nav>
+    </header>
+    <section id="hero" class="hero">
+        <div id="hero-text">
+            <h2 class="title">Hi, I'm Yogavardhan Reddy</h2>
+            <p>I'm a Web Developer</p>
+            <a href="./assets/web-resume.pdf" class="btn">Download Resume</a>
+        </div>
+        <div class="hero-img">
+            <img src="./assets/profile.png" alt="portfolio">
+        </div>
+    </section>
+    <section id="About" class="About">
+       <h2>About Me</h2>
+        <p>I am a passionate web developer with experience in creating dynamic and user-friendly websites.</p>
+        <p>I enjoy problem-solving and learning new technologies.</p>
+        <div class="skills">
+            <h3>Skills</h3>
+            <div class="skill">
+              <span>HTML</span>
+              <div class="skill-bar">
+                <div class="skill-level html"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>CSS</span>
+              <div class="skill-bar">
+                <div class="skill-level css"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>JavaScript</span>
+              <div class="skill-bar">
+                <div class="skill-level js"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>React</span>
+              <div class="skill-bar">
+                <div class="skill-level react"></div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Wheather App</h3>
+                <img src="./assets/weather.png" alt="Weather App">
+                <p>Real-time weather forecast using API.</p>
+                <a href="#">View on Github</a>
+            </div>
+            <div class="project-card">
+                <h3>portfolio Website</h3>
+                <img src="./assets/portfolio-img.jpeg" alt="portfolio-website">
+                <p>Fully responsive personal portfolio.</p>
+                <a href="#">View on Github</a>
+            </div>
+            <div class="project-card">
+                <h3>Wheather App</h3>
+                <img src="./assets/weather.png" alt="Weather App">
+                <p>Real-time weather forecast using API.</p>
+                <a href="#">View on Github</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="text" placeholder="Email" required>
+            <textarea  placeholder="Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Yogavardhan Reddy | Follow me:
+            <a href="#">LinkedIn</a>
+            <a href="#">Github</a>
+        </p>
+    </footer>
+</body>
+</html>
