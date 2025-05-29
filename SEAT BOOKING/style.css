@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    padding: 1rem;
+    max-width: 960px;
+    margin: auto;
+    background: white;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .screen {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin: 2rem auto 1rem auto;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  .seat-row {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+  }
+  
+  .seat {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc; /* available */
+    margin: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .seat.booked {
+    background-color: #ff4d4d; /* red - booked */
+    cursor: not-allowed;
+  }
+  
+  .seat.selected {
+    background-color: #4da6ff !important; /* blue - selected */
+  }
+  
+  .legend {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  
+  .legend div {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  .legend span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  .available { background-color: #ccc; }
+  .booked { background-color: #ff4d4d; }
+  .selected { background-color: #4da6ff; }
+  
+  .selection-display {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .sector-buttons {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .sector-buttons button {
+    margin: 0 5px;
+    padding: 6px 12px;
+    background-color: #eee;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .sector-buttons button:hover {
+    background-color: #ddd;
+  }
+  
+  @media (max-width: 600px) {
+    .seat {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .sector-buttons button {
+      margin: 4px;
+      padding: 8px 16px;
+    }
+  }
+  
